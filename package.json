@@ -1,0 +1,17 @@
+{
+  "name": "demo2",
+  "version": "1.0.0",
+  "description": "Web victor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass ./sass/main.sass ./css/main.css",
+    "watch-sass": "nodemon -e sass -x \"npm run build\""
+  },
+  "author": "korn",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.8.3",
+    "nodemon": "^1.17.3"
+  }
+}
