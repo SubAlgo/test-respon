@@ -123,18 +123,19 @@ div {
 /*import Top_header_color*/
 #top-header {
   background: linear-gradient(to bottom right, #22a0d6 0%, #82f2a4 100%);
+  text-align: center;
 }
 
 #top-header > p {
-  display: block;
-  color: white;
+  display: inline;
   margin: 0;
+  padding-left: 10px;
+  color: white;
 }
 
 @media screen and (max-width: 560px) {
-  #top-header > p {
-    display: inline;
-    margin-left: 10px;
+  #top-header p {
+    display: block;
   }
 }
 /*logo*/
@@ -144,11 +145,12 @@ div {
 
 nav {
   width: 100%;
-  background-color: #ee6e73;
+  /*background-color: #ee6e73*/
   height: 100px;
   line-height: 100px;
   position: sticky;
   top: 0px;
+  border: 1px red solid;
 }
 
 nav .nav-wrapper {
@@ -181,11 +183,29 @@ li {
   color: white;
 }
 
-a {
+nav a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 li:hover {
-  background: #fff;
+  background: red;
 }
+li:hover a {
+  color: blue;
+}
+
+.nav-wrapper-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 560px) {
+  #logo {
+    display: none;
+  }
+
+  /*ul
+  *
+  *  margin-right: 50%*/
+}
+/*nav*/
