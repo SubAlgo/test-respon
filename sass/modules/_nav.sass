@@ -6,15 +6,25 @@ nav
     position: sticky
     top: 0px
     border: 1px red solid
+    overflow: hidden
+    /*background-color: #f2f2f2*/
+    background-color: #fff
 
 nav .nav-wrapper
     position: relative
     height: 100%
+    width: 90%
+    /*background-color: red*/
+    margin-left: auto
+    margin-right: auto
 
-#logo
+nav .logo-wrapper
+
+
+nav #logo
     height: 100%
 
-ul
+nav ul
     display: inline
     list-style: none
     float: right
@@ -22,28 +32,33 @@ ul
     margin-bottom: auto
     margin-right: 10px
     
-li 
-  display: inline-block
-  cursor: pointer
-  margin-right: 5px
-  margin-top: 0
-  margin-bottom: 0
-  padding-right: 10px
-  padding-left: 10px
-  vertical-align: middle
-  color: white
+nav li 
+    display: inline-block
+    cursor: pointer
+    margin-right: 5px
+    margin-top: 0
+    margin-bottom: 0
+    padding-right: 10px
+    padding-left: 10px
+    vertical-align: middle
+    color: white
+    -webkit-transition: all 2s
+    transition: all 2s
 
 nav a 
   text-decoration: none
-  color: black
-
-li:hover 
-  background: red
-  a
-      color: blue
-
-
+  /*color: black*/
+  text-transform: uppercase
+  color: #242424
+  font-family: "Montserrat", Arial, sans-serif
   
+
+nav li:hover
+    a
+        /*color: #42f4cb*/
+        text-decoration: underline
+        -webkit-text-decoration-color: #7adbcb
+        text-decoration-color: #7adbcb
 
 .nav-wrapper-mobile
     display: none
